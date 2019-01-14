@@ -1,0 +1,10 @@
+{
+  "generator-angm": {
+    "appName": "comgress",
+    "angularCookies": true,
+    "angularAnimate": true,
+    "angularSanitize": true,
+    "angularBootstrap": true,
+    "angularMaterial": true
+  }
+}
