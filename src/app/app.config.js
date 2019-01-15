@@ -24,26 +24,21 @@
 		// This is required for Browser Sync to work poperly
 		$httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-		$urlRouterProvider.otherwise('/');
-		// $stateProvider
-		// 	.state('home', {
-		// 		url: '/',
-		// 		templateUrl: 'public/partials/home-partial.html',
-		// 		controller: 'HomeController'
-		// 	})
-		// 	.state('about', {
-		// 		url: '/about',
-		// 		templateUrl: 'public/partials/about-partial.html',
-		// 		controller: 'AboutController'
-		// 	});
+		$urlRouterProvider.otherwise('/explorar');
+		$stateProvider
+			.state('Explorar', {
+				url: '/explorar',
+				templateUrl: 'src/app/modules/views/eventos/eventos.template.html',
+
+				controller: 'EventosController',
+				controllerAs: 'vm'
+			});
 	}
 
-	runBlock.$inject = ['$rootScope'];
+	runBlock.$inject = ['$rootScope', '$state'];
 
-	function runBlock($rootScope) {
+	function runBlock($rootScope, $state) {
 		'use strict';
-		console.log('AngularJS run() function...');
+		$rootScope.state = $state;
 	}
-
-
 })();
