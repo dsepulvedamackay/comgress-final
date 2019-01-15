@@ -4,6 +4,8 @@ module.exports = function (grunt) {
 	"use strict";
 
 	// Project configuration.
+	const sass = require('node-sass');
+
 	grunt.initConfig({
 
 		pkg: grunt.file.readJSON('package.json'),
@@ -14,6 +16,19 @@ module.exports = function (grunt) {
 
 		clean: {
 			dist: ['src']
+		},
+
+		sass: {
+			options: {
+				implementation: sass,
+				sourceMap: true
+			},
+			dist: {
+				files: [{
+					src: ['src/app/main.scss'],
+					dest: 'src/app/assets/css/styles.css'
+				}]
+			}
 		},
 
 		jshint: {
@@ -112,6 +127,7 @@ module.exports = function (grunt) {
 						'bower.json',
 						'src/app/app.js',
 						'src/app/app.config.js',
+						'src/app/assets/css/**/*.css',
 						'src/app/**/*.js'
 					]
 				}
@@ -156,11 +172,12 @@ module.exports = function (grunt) {
 		"concat",
 		"ngtemplates",
 		"injector:production",
+		"sass",
 		"concurrent",
 		"clean"
 	]);
 
 	// Development task(s).
-	grunt.registerTask('dev', ['injector:dev', 'concurrent']);
+	grunt.registerTask('dev', ['sass', 'injector:dev', 'concurrent']);
 
 };
