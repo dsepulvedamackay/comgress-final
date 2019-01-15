@@ -1,0 +1,29 @@
+.header-container {
+  background-color: #FFFFFF !important;
+  min-height: 50px !important;
+  max-height: 50px !important; }
+  .header-container span {
+    color: #212121; }
+
+.sidenav-container {
+  width: 220px; }
+  .sidenav-container .sidenav-user {
+    padding: 15px;
+    padding-bottom: 10px;
+    background-color: #455A64 !important; }
+    .sidenav-container .sidenav-user h1 {
+      font-size: 15px; }
+    .sidenav-container .sidenav-user h2 {
+      font-size: 10px;
+      color: #CFD8DC; }
+    .sidenav-container .sidenav-user .sidenav-avatar {
+      height: 50px;
+      width: 40px; }
+    .sidenav-container .sidenav-user .sidenav-user-details {
+      margin-top: -5px; }
+  .sidenav-container md-content {
+    background-color: #455A64; }
+  .sidenav-container .sidenav-options-list {
+    opacity: 0.9; }
+
+/*# sourceMappingURL=styles.css.map */
