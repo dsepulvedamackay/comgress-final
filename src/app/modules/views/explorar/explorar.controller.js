@@ -3,13 +3,13 @@
 
     angular
         .module('comgress')
-        .controller('EventosController', EventosController);
+        .controller('ExplorarController', ExplorarController);
 
     /** @ngInject */
-    function EventosController($http, $uibModal) {
+    function ExplorarController($http, $uibModal) {
         var vm = this;
         vm.options = {
-            templateUrl: "src/app/modules/views/eventos/eventos.crearEvento.template.html"
+            templateUrl: "src/app/modules/views/explorar/explorar.crearEvento.template.html"
         }
         vm.openModal = function() {
             $uibModal.open(vm.options);

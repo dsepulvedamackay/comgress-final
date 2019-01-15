@@ -1,6 +1,7 @@
 @import 'modules/layouts/header/_header.scss';
 @import 'modules/layouts/side-nav/_side-nav.scss';
-@import 'modules/views/eventos/_eventos.scss';
+@import 'modules/views/explorar/_explorar.scss';
+@import 'modules/views/evento/_evento.scss';
 
 .view-container {
   background-color: #F8F8FF;
@@ -10,7 +11,7 @@
   }
 
   .view-content {
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 }
 

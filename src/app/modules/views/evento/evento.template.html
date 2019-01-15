@@ -1,0 +1,28 @@
+<section class="view-content" layout="row" layout-fill>
+  <md-card class="evento-card" flex>
+    <md-card-title layout-wrap class="evento-card-title">
+      <md-card-title-text flex="60">
+        <span class="md-headline">{{vm.evento.nombre}}</span>
+        <span class="md-subhead">{{vm.evento.tipo}}</span>
+        <span style="color: rgb(109, 109, 243);"><b>{{vm.evento.cupos}} cupos</b></span>
+        <span><i>{{vm.evento.lugar}}</i></span>
+        <div class="evento-card-data" layout="column">
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu rhoncus urna. Aenean sed elit vel justo lobortis vulputate. Nullam quis pellentesque tortor. Nunc fermentum arcu sed convallis molestie. Sed eu tortor sed sem venenatis egestas pretium a nulla. Quisque euismod in justo in ullamcorper. Sed luctus mattis nulla, ac venenatis justo finibus eu. Pellentesque aliquet efficitur nunc, non auctor odio interdum sit amet. Fusce dolor ipsum, tincidunt ac tellus porttitor, fermentum egestas urna. Nulla eleifend purus molestie suscipit semper. Aliquam euismod lacus mauris, non fermentum velit volutpat at.</span>
+        </div>
+      </md-card-title-text>
+      <md-card-title-media flex="40">
+        <div class="evento-img-large"></div>
+      </md-card-title-media>
+    </md-card-title>
+    <md-card-actions class="evento-card-actions" layout="row" layout-align="space-between center">
+      <div>
+        <md-button class="color-secondary">Me interesa</md-button>
+        <md-button ng-if="!evento.userJoined" class="md-raised bg-color-primary" ng-click="vm.userJoin(evento, true)">Unirse</md-button>
+        <md-button ng-if="evento.userJoined" class="color-primary" ng-click="vm.userJoin(evento, false)">Deshacer</md-button>
+      </div>
+      <div ng-if="evento.userJoined">
+        <span class="text-success"><i>¡Te has unido satisfactoriamente!</i></span>
+      </div>
+    </md-card-actions>
+  </md-card>
+</section>

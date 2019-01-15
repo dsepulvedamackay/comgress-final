@@ -1,14 +1,14 @@
 <section class="view-content" layout="row" layout-fill>
   <div layout="column" flex>
-    <md-card class="evento-card" ng-if="$even" ng-repeat="evento in vm.eventos">
-      <md-card-title class="evento-card-title">
+    <md-card ng-init="height = 3" ng-mouseenter="height = 6" ng-mouseleave="height = 3" md-whiteframe={{height}} class="evento-card" ng-if="$even" ng-repeat="evento in vm.eventos">
+      <md-card-title ui-sref="Evento({ id: evento.id })" class="evento-card-title">
         <md-card-title-text>
           <span class="md-headline">{{evento.nombre}}</span>
           <span class="md-subhead">{{evento.tipo}}</span>
+          <span style="color: rgb(109, 109, 243);"><b>{{evento.cupos}} cupos</b></span>
+          <span><i>{{evento.lugar}}</i></span>
           <div class="evento-card-data" layout="column">
             <span>{{evento.descripcion}}</span>
-            <span style="color: rgb(109, 109, 243);"><b>{{evento.cupos}} cupos</b></span>
-            <span><i>{{evento.lugar}}</i></span>
           </div>
         </md-card-title-text>
         <md-card-title-media>
@@ -28,7 +28,7 @@
     </md-card>
   </div>
   <div layout="column" flex>
-    <md-card class="evento-card" ng-if="$odd" ng-repeat="evento in vm.eventos">
+    <md-card ng-init="height = 3" ng-mouseenter="height = 6" ng-mouseleave="height = 3" md-whiteframe={{height}} ui-sref="Evento({ id: evento.id })" class="evento-card" ng-if="$odd" ng-repeat="evento in vm.eventos">
       <md-card-title class="evento-card-title">
         <md-card-title-text>
           <span class="md-headline">{{evento.nombre}}</span>

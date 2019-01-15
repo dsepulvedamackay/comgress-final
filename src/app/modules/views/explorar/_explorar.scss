@@ -1,4 +1,7 @@
 .evento-card {
+  &:hover {
+    cursor:pointer;
+  }
   min-height: 210px;
   .evento-card-data {
     margin-top: 10px;
@@ -14,7 +17,7 @@
 }
 
 .evento-img {
-  background-color: grey;
+  background-color: #eceff1;
 }
 
 .evento-botonera {

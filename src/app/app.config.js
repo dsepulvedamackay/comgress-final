@@ -28,9 +28,14 @@
 		$stateProvider
 			.state('Explorar', {
 				url: '/explorar',
-				templateUrl: 'src/app/modules/views/eventos/eventos.template.html',
-
-				controller: 'EventosController',
+				templateUrl: 'src/app/modules/views/explorar/explorar.template.html',
+				controller: 'ExplorarController',
+				controllerAs: 'vm'
+			})
+			.state('Evento', {
+				url: "/evento/{id}",
+				templateUrl: "src/app/modules/views/evento/evento.template.html",
+				controller: 'EventoController',
 				controllerAs: 'vm'
 			});
 	}

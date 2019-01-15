@@ -52,6 +52,8 @@
 
 .evento-card {
   min-height: 210px; }
+  .evento-card:hover {
+    cursor: pointer; }
   .evento-card .evento-card-data {
     margin-top: 10px; }
   .evento-card .evento-card-actions {
@@ -62,7 +64,7 @@
   overflow-y: auto; }
 
 .evento-img {
-  background-color: grey; }
+  background-color: #eceff1; }
 
 .evento-botonera {
   display: flex; }
@@ -70,13 +72,22 @@
 .nuevo-evento .row:not(:last-child) {
   margin-bottom: 10px; }
 
+.evento-title {
+  font-size: 30px; }
+
+.evento-img-large {
+  background-color: #eceff1;
+  height: 100% !important;
+  width: auto !important;
+  margin-left: 10px !important; }
+
 .view-container {
   background-color: #F8F8FF;
   padding: 25px; }
   .view-container .view-title {
     font-size: 30px; }
   .view-container .view-content {
-    overflow-y: scroll; }
+    overflow-y: auto; }
 
 .no-padding {
   padding: 0px; }
