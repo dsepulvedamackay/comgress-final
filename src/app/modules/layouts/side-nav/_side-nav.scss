@@ -1,13 +1,16 @@
 .sidenav-container {
   width: 220px;
   .sidenav-user {
-    padding: 15px;
+    &:hover {
+      background-color: #607D8B !important;
+    }
+    padding: 20px;
     padding-bottom: 10px;
     background-color: #455A64 !important;
-    h1 {
+    .sidenav-username-text {
       font-size: 15px;
     }
-    h2 {
+    .sidenav-role-text {
       font-size: 10px;
       color: #CFD8DC;
     }
@@ -17,15 +20,23 @@
     }
 
     .sidenav-user-details {
-      margin-top: -5px;
+      justify-content: space-between;
+      margin-top: 5px;
+      .glyphicon {
+        align-self: center;
+        font-size: 10px;
+      }
     }
   }
 
-  md-content {
-    background-color: #455A64;
-  }
-
   .sidenav-options-list {
+    background-color: #455A64;
+    color: #FFFFFF;
     opacity: 0.9;
+
+    md-list-item {
+      height: 10px;
+      padding: 0px;
+    }
   }
 }

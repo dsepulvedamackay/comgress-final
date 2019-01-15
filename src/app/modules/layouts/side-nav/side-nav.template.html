@@ -1,16 +1,25 @@
-<md-sidenav class="sidenav-container" class="md-sidenav-left" md-component-id="left" md-is-locked-open="true" md-whiteframe="4">
-  <md-toolbar class="sidenav-user" layout="row">
-    <div layout="column">
-      <img class="sidenav-avatar" src="src/app/assets/images/donkikon.png" />
-      <div class="sidenav-user-details">
-        <h1>Donki Kon</h1>
-        <h2>Programmer</h2>
-      </div>
-    </div>
+<md-sidenav class="sidenav-container" class="md-sidenav-left" md-component-id="left" md-is-locked-open="true" md-whiteframe="8">
+  <md-toolbar class="sidenav-user" layout="column">
     <div layout="row">
-      <span class="glyphicon glyphicon-chevron-right"></span>
+      <img class="sidenav-avatar" src="src/app/assets/images/donkikon.png" />
+    </div>
+    <div class="sidenav-user-details" layout="row">
+      <div layout="column">
+        <span class="sidenav-username-text">Donki Kon</span>
+        <span class="sidenav-role-text">Programmer</span>
+      </div>
+      <i class="glyphicon glyphicon-chevron-right"></i>
     </div>
   </md-toolbar>
-  <md-content class="sidenav-options-list" flex layout-padding>
-  </md-content>
+  <md-list flex layout-padding class="sidenav-options-list" ng-cloak>
+    <md-list-item ng-click="doPrimaryAction($event)">
+      <p>Inicio</p>
+    </md-list-item>
+    <md-list-item ng-click="doPrimaryAction($event)">
+      <p>Explorar</p>
+    </md-list-item>
+    <md-list-item ng-click="doPrimaryAction($event)">
+      <p>Mis eventos</p>
+    </md-list-item>
+  </md-list>
 </md-sidenav>
