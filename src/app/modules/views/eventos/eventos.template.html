@@ -15,9 +15,15 @@
           <div class="evento-img md-media-md card-media"></div>
         </md-card-title-media>
       </md-card-title>
-      <md-card-actions class="evento-card-actions" layout="row" layout-align="start center">
-        <md-button class="color-secondary">Me interesa</md-button>
-        <md-button class="md-raised bg-color-primary" ng-click="vm.userJoin(evento)">Unirse</md-button>
+      <md-card-actions class="evento-card-actions" layout="row" layout-align="space-between center">
+        <div>
+          <md-button class="color-secondary">Me interesa</md-button>
+          <md-button ng-if="!evento.userJoined" class="md-raised bg-color-primary" ng-click="vm.userJoin(evento, true)">Unirse</md-button>
+          <md-button ng-if="evento.userJoined" class="color-primary" ng-click="vm.userJoin(evento, false)">Deshacer</md-button>
+        </div>
+        <div ng-if="evento.userJoined">
+          <span class="text-success"><i>¡Te has unido satisfactoriamente!</i></span>
+        </div>
       </md-card-actions>
     </md-card>
   </div>
@@ -37,9 +43,15 @@
           <div class="evento-img md-media-md card-media"></div>
         </md-card-title-media>
       </md-card-title>
-      <md-card-actions class="evento-card-actions" layout="row" layout-align="start center">
-        <md-button class="color-secondary">Me interesa</md-button>
-        <md-button class="md-raised bg-color-primary" ng-click="vm.userJoin(evento)">Unirse</md-button>
+      <md-card-actions class="evento-card-actions" layout="row" layout-align="space-between center">
+        <div>
+          <md-button class="color-secondary">Me interesa</md-button>
+          <md-button ng-if="!evento.userJoined" class="md-raised bg-color-primary" ng-click="vm.userJoin(evento, true)">Unirse</md-button>
+          <md-button ng-if="evento.userJoined" class="color-primary" ng-click="vm.userJoin(evento, false)">Deshacer</md-button>
+        </div>
+        <div ng-if="evento.userJoined">
+          <span class="text-success"><i>¡Te has unido satisfactoriamente!</i></span>
+        </div>
       </md-card-actions>
     </md-card>
   </div>
