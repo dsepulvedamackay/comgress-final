@@ -4,26 +4,53 @@
   max-height: 50px !important; }
   .header-container span {
     color: #212121; }
+  .header-container input {
+    color: #212121;
+    border: 1px solid #BDBDBD;
+    background-color: #CFD8DC;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 5px 15px;
+    height: 32px;
+    align-self: center; }
+    .header-container input:focus {
+      outline: none; }
+  .header-container .glyphicon {
+    align-self: center;
+    color: #455A64;
+    font-size: 20px; }
 
 .sidenav-container {
   width: 220px; }
   .sidenav-container .sidenav-user {
-    padding: 15px;
+    padding: 20px;
     padding-bottom: 10px;
     background-color: #455A64 !important; }
-    .sidenav-container .sidenav-user h1 {
+    .sidenav-container .sidenav-user:hover {
+      background-color: #607D8B !important; }
+    .sidenav-container .sidenav-user .sidenav-username-text {
       font-size: 15px; }
-    .sidenav-container .sidenav-user h2 {
+    .sidenav-container .sidenav-user .sidenav-role-text {
       font-size: 10px;
       color: #CFD8DC; }
     .sidenav-container .sidenav-user .sidenav-avatar {
       height: 50px;
       width: 40px; }
     .sidenav-container .sidenav-user .sidenav-user-details {
-      margin-top: -5px; }
-  .sidenav-container md-content {
-    background-color: #455A64; }
+      justify-content: space-between;
+      margin-top: 5px; }
+      .sidenav-container .sidenav-user .sidenav-user-details .glyphicon {
+        align-self: center;
+        font-size: 10px; }
   .sidenav-container .sidenav-options-list {
+    background-color: #455A64;
+    color: #FFFFFF;
     opacity: 0.9; }
+    .sidenav-container .sidenav-options-list md-list-item {
+      height: 10px;
+      padding: 0px; }
+
+.no-padding {
+  padding: 0px; }
 
 /*# sourceMappingURL=styles.css.map */
