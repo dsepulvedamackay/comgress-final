@@ -42,11 +42,7 @@ module.exports = function (grunt) {
 					// Angular Project Dependencies,
 					'src/app/app.js',
 					'src/app/app.config.js',
-					'src/app/modules/**/*Module.js',
-					'src/app/modules/**/*Route.js',
-					'src/app/modules/**/*Ctrl.js',
-					'src/app/modules/**/*Service.js',
-					'src/app/modules/**/*Directive.js'
+					'src/app/modules/**/*.js'
 				],
 				dest: 'src/app/assets/js/<%= pkg.name %>-appbundle.js'
 			},
@@ -55,7 +51,6 @@ module.exports = function (grunt) {
 					// Angular Project Dependencies,
 					'src/app/assets/libs/angular/angular.js',
 					'src/app/assets/libs/**/*.js'
-
 				],
 				dest: 'src/app/assets/js/<%= pkg.name %>-angularbundle.js'
 			}
@@ -117,11 +112,7 @@ module.exports = function (grunt) {
 						'bower.json',
 						'src/app/app.js',
 						'src/app/app.config.js',
-						'src/app/**/*Module.js',
-						'src/app/**/*Route.js',
-						'src/app/**/*Ctrl.js',
-						'src/app/**/*Service.js',
-						'src/app/**/*Directive.js'
+						'src/app/**/*.js'
 					]
 				}
 			},
