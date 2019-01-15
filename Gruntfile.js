@@ -116,7 +116,15 @@ module.exports = function (grunt) {
 				options: {
 					livereload: true
 				}
-			}
+			},
+			css: {
+        files: 'src/app/**/*.scss',
+				tasks: ['sass'],
+        options: {
+            spawn: false,
+            livereload: true
+        }
+    	}
 		},
 
 		injector: {
