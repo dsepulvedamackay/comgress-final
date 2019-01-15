@@ -5,4 +5,25 @@
   span {
     color: #212121;
   }
+
+  input {
+    &:focus {
+      outline: none;
+    }
+
+    color: #212121;
+    border: 1px solid #BDBDBD;
+    background-color: #CFD8DC;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 5px 15px;
+    height: 32px;
+    align-self: center;
+  }
+
+  .glyphicon {
+    align-self: center;
+    color: #455A64;
+    font-size: 20px;
+  }
 }
