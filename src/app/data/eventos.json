@@ -1,0 +1,52 @@
+{
+  "eventos": [
+    {
+      "id": 1,
+      "nombre": "Evento 1",
+      "tipo": "Congreso",
+      "descripcion": "Descripción evento",
+      "cupos": "30",
+      "lugar": "UFRO, Temuco"
+    },
+    {
+      "id": 2,
+      "nombre": "Evento 2",
+      "tipo": "Seminario",
+      "descripcion": "Descripción evento",
+      "cupos": "400",
+      "lugar": "Inacap, Temuco"
+    },
+    {
+      "id": 3,
+      "nombre": "Evento 3",
+      "tipo": "Charla",
+      "descripcion": "Descripción evento",
+      "cupos": "700",
+      "lugar": "UFRO, Temuco"
+    },
+    {
+      "id": 4,
+      "nombre": "Evento 4",
+      "tipo": "Conreso",
+      "descripcion": "Descripción evento",
+      "cupos": "700",
+      "lugar": "UCT, Temuco"
+    },
+    {
+      "id": 5,
+      "nombre": "Evento 5",
+      "tipo": "Charla",
+      "descripcion": "Descripción evento",
+      "cupos": "700",
+      "lugar": "UCH, Santiago"
+    },
+    {
+      "id": 6,
+      "nombre": "Evento 6",
+      "tipo": "Seminario",
+      "descripcion": "Descripción evento",
+      "cupos": "700",
+      "lugar": "Pitrufquen"
+    }
+  ]
+}

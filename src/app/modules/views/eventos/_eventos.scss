@@ -1,0 +1,26 @@
+.evento-card {
+  min-height: 210px;
+  .evento-card-data {
+    margin-top: 10px;
+  }
+  .evento-card-actions {
+  }
+}
+
+.vista-evento {
+  overflow-y: auto;
+}
+
+.evento-img {
+  background-color: grey;
+}
+
+.evento-botonera {
+  display: flex;
+}
+
+.nuevo-evento {
+  .row:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

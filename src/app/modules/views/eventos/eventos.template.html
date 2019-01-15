@@ -1,0 +1,46 @@
+<section class="view-content" layout="row" layout-fill>
+  <div layout="column" flex>
+    <md-card class="evento-card" ng-if="$even" ng-repeat="evento in vm.eventos">
+      <md-card-title class="evento-card-title">
+        <md-card-title-text>
+          <span class="md-headline">{{evento.nombre}}</span>
+          <span class="md-subhead">{{evento.tipo}}</span>
+          <div class="evento-card-data" layout="column">
+            <span>{{evento.descripcion}}</span>
+            <span style="color: rgb(109, 109, 243);"><b>{{evento.cupos}} cupos</b></span>
+            <span><i>{{evento.lugar}}</i></span>
+          </div>
+        </md-card-title-text>
+        <md-card-title-media>
+          <div class="evento-img md-media-md card-media"></div>
+        </md-card-title-media>
+      </md-card-title>
+      <md-card-actions class="evento-card-actions" layout="row" layout-align="start center">
+        <md-button class="color-secondary">Me interesa</md-button>
+        <md-button class="md-raised bg-color-primary" ng-click="vm.userJoin(evento)">Unirse</md-button>
+      </md-card-actions>
+    </md-card>
+  </div>
+  <div layout="column" flex>
+    <md-card class="evento-card" ng-if="$odd" ng-repeat="evento in vm.eventos">
+      <md-card-title class="evento-card-title">
+        <md-card-title-text>
+          <span class="md-headline">{{evento.nombre}}</span>
+          <span class="md-subhead">{{evento.tipo}}</span>
+          <div class="evento-card-data" layout="column">
+            <span>{{evento.descripcion}}</span>
+            <span style="color: rgb(109, 109, 243);"><b>{{evento.cupos}} cupos</b></span>
+            <span><i>{{evento.lugar}}</i></span>
+          </div>
+        </md-card-title-text>
+        <md-card-title-media>
+          <div class="evento-img md-media-md card-media"></div>
+        </md-card-title-media>
+      </md-card-title>
+      <md-card-actions class="evento-card-actions" layout="row" layout-align="start center">
+        <md-button class="color-secondary">Me interesa</md-button>
+        <md-button class="md-raised bg-color-primary" ng-click="vm.userJoin(evento)">Unirse</md-button>
+      </md-card-actions>
+    </md-card>
+  </div>
+</section>
