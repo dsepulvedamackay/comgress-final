@@ -1,9 +1,9 @@
 .header-container {
-  background-color: #FFFFFF !important;
+  background-color: #37474f !important;
   min-height: 50px !important;
   max-height: 50px !important; }
   .header-container span {
-    color: #212121; }
+    color: #FFFFFF; }
   .header-container input {
     color: #212121;
     border: 1px solid #BDBDBD;
@@ -17,7 +17,7 @@
       outline: none; }
   .header-container .glyphicon {
     align-self: center;
-    color: #455A64;
+    color: #FFFFFF;
     font-size: 20px; }
 
 .sidenav-container {
@@ -50,7 +50,42 @@
       height: 10px;
       padding: 0px; }
 
+.evento-card {
+  min-height: 210px; }
+  .evento-card .evento-card-data {
+    margin-top: 10px; }
+
+.vista-evento {
+  overflow-y: auto; }
+
+.evento-img {
+  background-color: grey; }
+
+.evento-botonera {
+  display: flex; }
+
+.nuevo-evento .row:not(:last-child) {
+  margin-bottom: 10px; }
+
+.view-container {
+  background-color: #F8F8FF;
+  padding: 25px; }
+  .view-container .view-title {
+    font-size: 30px; }
+  .view-container .view-content {
+    overflow-y: scroll; }
+
 .no-padding {
   padding: 0px; }
+
+.color-primary {
+  color: #FF5722; }
+
+.bg-color-primary {
+  background-color: #FF5722 !important;
+  color: #FFFFFF !important; }
+
+.color-secondary {
+  color: #757575; }
 
 /*# sourceMappingURL=styles.css.map */

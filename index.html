@@ -19,7 +19,11 @@
 			<header></header>
 			<div layout="row" layout-wrap flex>
 				<side-nav layout="row"></side-nav>
-				<div ui-view></div>
+				<div class="view-container" layout="column" flex>
+					<span class="view-title">{{state.current.name}}</span>
+					<div ui-view flex>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -45,6 +49,7 @@
 		<script src="/src/app/app.config.js"></script>
 		<script src="/src/app/modules/layouts/header/header.component.js"></script>
 		<script src="/src/app/modules/layouts/side-nav/side-nav.component.js"></script>
+		<script src="/src/app/modules/views/eventos/eventos.controller.js"></script>
 		<!-- endinjector -->
 	</body>
 </html>
