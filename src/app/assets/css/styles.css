@@ -92,14 +92,21 @@
 .no-padding {
   padding: 0px; }
 
-.color-primary {
+.color-secondary {
   color: #FF5722; }
 
-.bg-color-primary {
+.bg-color-secondary {
   background-color: #FF5722 !important;
   color: #FFFFFF !important; }
 
-.color-secondary {
+.color-primary {
   color: #757575; }
+
+.bg-color-primary {
+  background-color: #757575 !important;
+  color: #FFFFFF !important; }
+
+.button-icon {
+  font-size: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
