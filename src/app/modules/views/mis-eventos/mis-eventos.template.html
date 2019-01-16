@@ -1,0 +1,15 @@
+<section md-whiteframe="4" class="view-content mis-eventos-container" layout="row" layout-fill>
+  <md-list flex>
+    <md-list-item class="md-3-line" layout="row" layout-wrap ng-repeat="evento in vm.eventos" ui-sref="Evento({ id: evento.id })">
+      <div class="md-avatar"></div>
+      <div flex="20" class="md-list-item-text" layout="column">
+        <h3>{{ evento.nombre }}</h3>
+        <h4>{{ evento.tipo }}</h4>
+        <p>{{ evento.lugar }}</p>
+      </div>
+      <div flex="80" class="md-list-item-text" layout="column">
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu rhoncus urna. Aenean sed elit vel justo lobortis vulputate. Nullam quis pellentesque tortor. Nunc fermentum arcu sed convallis molestie. Sed eu tortor sed sem venenatis egestas pretium a nulla. Quisque euismod in justo in ullamcorper. Sed luctus mattis nulla, ac venenatis justo finibus eu.</span>
+      </div>
+    </md-list-item>
+  </md-list>
+</section>

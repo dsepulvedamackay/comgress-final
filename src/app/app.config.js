@@ -44,6 +44,12 @@
 				templateUrl: "src/app/modules/views/evento/evento.template.html",
 				controller: 'EventoController',
 				controllerAs: 'vm'
+			})
+			.state('Mis eventos', {
+				url: '/mis-eventos',
+				templateUrl: 'src/app/modules/views/mis-eventos/mis-eventos.template.html',
+				controller: 'MisEventosController',
+				controllerAs: 'vm'
 			});
 	}
 

@@ -97,6 +97,9 @@
   .login-container label {
     color: #CFD8DC; }
 
+.mis-eventos-container md-list-item {
+  border-bottom: 1px solid #BDBDBD; }
+
 .view-container-full {
   background-color: #F8F8FF; }
 
