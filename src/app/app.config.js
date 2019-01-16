@@ -25,6 +25,9 @@
 		// This is required for Browser Sync to work poperly
 		$httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
+		//Configuración de estados de la aplicación. Los estados son los distintos "url" que puede tomar la aplicación
+		//También conecta cada controlador (controller) con su vista (templateUrl)
+		//En este caso, si hay un estado que no existe o tratas de ir a un url que no existe en la app, vas a ser redireccionado a "/login"
 		$urlRouterProvider.otherwise('/login');
 		$stateProvider
 			.state('Login', {
@@ -59,7 +62,7 @@
 		'use strict';
 		$rootScope._ = window._;
 		$rootScope.state = $state;
-		$rootScope.user = {
+		$rootScope.user = { //Crear datos de usuario falso, globales para la app
 			name: "David",
 			role: "Front end developer",
 			username: "david",

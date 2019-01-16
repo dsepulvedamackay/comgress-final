@@ -10,6 +10,7 @@
 	* Main module of the application.
 	*/
 
+	//Inyeccion de dependencias de la aplicación
 	var app = angular.module('comgress', [
 		'ngResource',
 		'ngAria',

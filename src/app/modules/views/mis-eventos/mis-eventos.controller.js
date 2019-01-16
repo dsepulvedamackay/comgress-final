@@ -12,6 +12,7 @@
         activate();
 
         function activate() {
+            //Muestra los eventos donde el usuario se unió
             EventoFactory.getUserEventos().then(function(data) {
               vm.eventos = data;
             });
