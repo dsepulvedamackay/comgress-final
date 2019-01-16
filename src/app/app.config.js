@@ -59,5 +59,12 @@
 		'use strict';
 		$rootScope._ = window._;
 		$rootScope.state = $state;
+		$rootScope.user = {
+			name: "David",
+			role: "Front end developer",
+			username: "david",
+			password: "123123",
+			eventosId: []
+		}
 	}
 })();

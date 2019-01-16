@@ -10,7 +10,8 @@
       });
 
     /** @ngInject */
-    function SideNavController() {
+    function SideNavController(UserFactory) {
       var vm = this;
+      vm.user = UserFactory.getUser();
     }
 })();

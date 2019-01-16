@@ -5,8 +5,8 @@
     </div>
     <div class="sidenav-user-details" layout="row">
       <div layout="column">
-        <span class="sidenav-username-text">David</span>
-        <span class="sidenav-role-text">Front end developer</span>
+        <span class="sidenav-username-text">{{vm.user.name}}</span>
+        <span class="sidenav-role-text">{{vm.user.role}}</span>
       </div>
       <i class="glyphicon glyphicon-chevron-right"></i>
     </div>
@@ -15,10 +15,10 @@
     <md-list-item ng-click="doPrimaryAction($event)">
       <p>Inicio</p>
     </md-list-item>
-    <md-list-item ui-sref="Explorar" ng-click="doPrimaryAction($event)">
+    <md-list-item ui-sref="Explorar">
       <p>Explorar</p>
     </md-list-item>
-    <md-list-item ng-click="doPrimaryAction($event)">
+    <md-list-item ui-sref="Mis eventos">
       <p>Mis eventos</p>
     </md-list-item>
   </md-list>
