@@ -6,24 +6,39 @@
     color: #FFFFFF;
   }
 
-  input {
-    &:focus {
-      outline: none;
+  .header-search {
+    input {
+      &:focus {
+        outline: none;
+      }
+
+      color: #212121;
+      border: 1px solid #BDBDBD;
+      background-color: #CFD8DC;
+      border-radius: 30px 0px 0px 30px;
+      font-size: 15px;
+      padding: 5px 15px;
+      height: 32px;
+      align-self: center;
     }
 
-    color: #212121;
-    border: 1px solid #BDBDBD;
-    background-color: #CFD8DC;
-    border-radius: 30px;
-    font-size: 15px;
-    padding: 5px 15px;
-    height: 32px;
-    align-self: center;
+    .md-icon-button {
+      border-radius: 0px 30px 30px 0px;
+      background-color: #607D8B;
+    }
   }
 
-  .glyphicon {
+  .md-icon-button {
+
+    margin: 0px;
+    height: 32px;
+    min-height: 32px;
     align-self: center;
-    color: #FFFFFF;
-    font-size: 20px;
+
+    .glyphicon {
+      align-self: center;
+      color: #FFFFFF;
+      font-size: 15px;
+    }
   }
 }

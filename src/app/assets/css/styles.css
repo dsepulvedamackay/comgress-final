@@ -4,21 +4,29 @@
   max-height: 50px !important; }
   .header-container span {
     color: #FFFFFF; }
-  .header-container input {
+  .header-container .header-search input {
     color: #212121;
     border: 1px solid #BDBDBD;
     background-color: #CFD8DC;
-    border-radius: 30px;
+    border-radius: 30px 0px 0px 30px;
     font-size: 15px;
     padding: 5px 15px;
     height: 32px;
     align-self: center; }
-    .header-container input:focus {
+    .header-container .header-search input:focus {
       outline: none; }
-  .header-container .glyphicon {
-    align-self: center;
-    color: #FFFFFF;
-    font-size: 20px; }
+  .header-container .header-search .md-icon-button {
+    border-radius: 0px 30px 30px 0px;
+    background-color: #607D8B; }
+  .header-container .md-icon-button {
+    margin: 0px;
+    height: 32px;
+    min-height: 32px;
+    align-self: center; }
+    .header-container .md-icon-button .glyphicon {
+      align-self: center;
+      color: #FFFFFF;
+      font-size: 15px; }
 
 .sidenav-container {
   width: 220px; }
