@@ -1,6 +1,6 @@
 <section class="view-content" layout="row" layout-fill>
   <div layout="column" flex>
-    <md-card ng-init="height = 3" ng-mouseenter="height = 6" ng-mouseleave="height = 3" md-whiteframe={{height}} class="evento-card" ng-if="$even" ng-repeat="evento in vm.eventos">
+    <md-card ng-init="height = 3" ng-mouseenter="height = 6" ng-mouseleave="height = 3" md-whiteframe={{height}} class="evento-card" ng-if="$even" ng-repeat="evento in vm.filteredEventos">
       <md-card-title ui-sref="Evento({ id: evento.id })" class="evento-card-title">
         <md-card-title-text>
           <span class="md-headline">{{evento.nombre}}</span>
@@ -28,7 +28,7 @@
     </md-card>
   </div>
   <div layout="column" flex>
-    <md-card ng-init="height = 3" ng-mouseenter="height = 6" ng-mouseleave="height = 3" md-whiteframe={{height}} class="evento-card" ng-if="$odd" ng-repeat="evento in vm.eventos">
+    <md-card ng-init="height = 3" ng-mouseenter="height = 6" ng-mouseleave="height = 3" md-whiteframe={{height}} class="evento-card" ng-if="$odd" ng-repeat="evento in vm.filteredEventos">
       <md-card-title ui-sref="Evento({ id: evento.id })" class="evento-card-title">
         <md-card-title-text>
           <span class="md-headline">{{evento.nombre}}</span>

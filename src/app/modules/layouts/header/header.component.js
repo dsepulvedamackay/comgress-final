@@ -10,7 +10,14 @@
       });
 
     /** @ngInject */
-    function headerController($scope) {
+    function headerController($rootScope, $state) {
         var vm = this;
+        vm.searchInput = "";
+
+        vm.searchEvents = function() {
+          $state.go('Explorar').then(function() {
+            $rootScope.$broadcast('filterEvents', vm.searchInput);
+          });
+        }
     }
 })();
