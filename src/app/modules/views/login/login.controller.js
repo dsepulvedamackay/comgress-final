@@ -6,13 +6,13 @@
         .controller('LoginController', LoginController);
 
     /** @ngInject */
-    function LoginController($state) {
+    function LoginController($state, $rootScope) {
         var vm = this;
 
         vm.username;
         vm.password;
         vm.login = function() {
-          if (vm.username == 'david' && vm.password == '123123') {
+          if (vm.username == $rootScope.user.username && vm.password == $rootScope.user.password) {
             $state.go('Explorar');
           }
         }
