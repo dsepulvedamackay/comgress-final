@@ -13,6 +13,7 @@
 	angular
 		.module('comgress')
 		.config(configure)
+		.constant('_', window._)
 		.run(runBlock);
 
 	configure.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider'];
@@ -44,6 +45,7 @@
 
 	function runBlock($rootScope, $state) {
 		'use strict';
+		$rootScope._ = window._;
 		$rootScope.state = $state;
 	}
 })();
