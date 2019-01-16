@@ -29,7 +29,6 @@
             angular.forEach(vm.eventos, function(evento) {
               evento.userJoined = false;
             });
-            console.log(vm.searchInput);
             vm.filteredEventos = filterEvents(vm.searchInput);
           });
         }

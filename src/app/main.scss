@@ -2,6 +2,11 @@
 @import 'modules/layouts/side-nav/_side-nav.scss';
 @import 'modules/views/explorar/_explorar.scss';
 @import 'modules/views/evento/_evento.scss';
+@import 'modules/views/login/_login.scss';
+
+.view-container-full {
+  background-color: #F8F8FF;
+}
 
 .view-container {
   background-color: #F8F8FF;
@@ -29,12 +34,16 @@
 }
 
 .color-primary {
-  color: #757575;
+  color: #455A64;
 }
 
 .bg-color-primary {
-  background-color: #757575 !important;
+  background-color: #455A64 !important;
   color: #FFFFFF !important;
+}
+
+.color-white {
+  color: #FFFFFF;
 }
 
 .button-icon {

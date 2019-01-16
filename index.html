@@ -16,11 +16,11 @@
 	</head>
 	<body ng-app="comgress">
 		<div layout="column" layout-fill>
-			<header></header>
+			<header ng-if="state.current.name != 'Login'"></header>
 			<div layout="row" layout-wrap flex>
-				<side-nav layout="row"></side-nav>
-				<div class="view-container" layout="column" flex>
-					<span ng-if="state.current.name != 'Evento'" class="view-title">{{state.current.name}}</span>
+				<side-nav ng-if="state.current.name != 'Login'" layout="row"></side-nav>
+				<div ng-class="{'view-container': state.current.name != 'Login', 'view-container-full': state.current.name == 'Login'}" layout="column" flex>
+					<span ng-if="state.current.name != 'Evento' && state.current.name != 'Login'" class="view-title">{{state.current.name}}</span>
 					<div ui-view flex>
 					</div>
 				</div>
@@ -52,6 +52,7 @@
 		<script src="/src/app/modules/layouts/side-nav/side-nav.component.js"></script>
 		<script src="/src/app/modules/views/evento/evento.controller.js"></script>
 		<script src="/src/app/modules/views/explorar/explorar.controller.js"></script>
+		<script src="/src/app/modules/views/login/login.controller.js"></script>
 		<!-- endinjector -->
 	</body>
 </html>

@@ -25,8 +25,14 @@
 		// This is required for Browser Sync to work poperly
 		$httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-		$urlRouterProvider.otherwise('/explorar');
+		$urlRouterProvider.otherwise('/login');
 		$stateProvider
+			.state('Login', {
+				url: '/login',
+				templateUrl: 'src/app/modules/views/login/login.template.html',
+				controller: 'LoginController',
+				controllerAs: 'vm'
+			})
 			.state('Explorar', {
 				url: '/explorar',
 				templateUrl: 'src/app/modules/views/explorar/explorar.template.html',

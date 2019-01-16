@@ -89,6 +89,17 @@
   width: auto !important;
   margin-left: 10px !important; }
 
+.login-container {
+  background-color: #607D8B;
+  padding: 80px;
+  border-radius: 30px;
+  color: #FFFFFF; }
+  .login-container label {
+    color: #CFD8DC; }
+
+.view-container-full {
+  background-color: #F8F8FF; }
+
 .view-container {
   background-color: #F8F8FF;
   padding: 25px; }
@@ -108,11 +119,14 @@
   color: #FFFFFF !important; }
 
 .color-primary {
-  color: #757575; }
+  color: #455A64; }
 
 .bg-color-primary {
-  background-color: #757575 !important;
+  background-color: #455A64 !important;
   color: #FFFFFF !important; }
+
+.color-white {
+  color: #FFFFFF; }
 
 .button-icon {
   font-size: 20px; }
